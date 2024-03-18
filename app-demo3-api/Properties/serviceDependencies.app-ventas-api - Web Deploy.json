@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/app-demo3-apiapi/apis/app-demo3-api",
+      "type": "apis.azure"
+    }
+  }
+}
