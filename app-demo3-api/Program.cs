@@ -9,10 +9,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var Configuracion = new Configuracion(builder.Configuration.GetConnectionString("bd_ventas")!);
+var Configuracion = new Configuracion(builder.Configuration.GetConnectionString("bd_dataquest")!);
 builder.Services.AddSingleton(Configuracion);
 
-builder.Services.AddScoped<IProducto, CRUDProducto>();
+builder.Services.AddScoped<IEstudiante, CRUDEstudiante>();
+builder.Services.AddScoped<IProfesor, CRUDProfesor>();
 
 var app = builder.Build();
 
